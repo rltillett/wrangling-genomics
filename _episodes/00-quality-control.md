@@ -13,7 +13,7 @@ keypoints:
 - "`for` loops let you perform the same set of operations on multiple files with a single command."
 ---
 
-_Modified from origanal Data Carpentry lesson. Originals can be found by navigation using links along top of page_
+_Modified from origanal Data Carpentry lesson. Originals can be found by navigation using links at bottom of page_
 
 # Bioinformatics workflows
 
