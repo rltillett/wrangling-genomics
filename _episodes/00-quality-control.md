@@ -13,6 +13,8 @@ keypoints:
 - "`for` loops let you perform the same set of operations on multiple files with a single command."
 ---
 
+_Modified from origanal Data Carpentry lesson. Originals can be found by navigation using links along top of page_
+
 # Bioinformatics workflows
 
 When working with high-throughput sequencing data, the raw reads you get off of the sequencer will need to pass
