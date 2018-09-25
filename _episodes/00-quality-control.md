@@ -61,6 +61,7 @@ We can view the first complete read in one of the files our dataset by using `he
 the first four lines.
 
 ~~~
+$ cd ~/dc_sample_data/untrimmed_fastq
 $ head -n4 SRR098026.fastq
 ~~~
 {: .bash}
