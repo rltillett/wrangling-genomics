@@ -201,7 +201,7 @@ Here, we see positions within the read in which the boxes span a much wider rang
 
 We will be working with a set of sample data that is located in a hidden directory (`.dc_sampledata_lite`). First, we
 will move some of these hidden files to the `data` directory your created at [the end of our
-last lesson](http://www.datacarpentry.org/shell-genomics/06-organization/).  
+last lesson, i.e. Assignment 4](http://www.datacarpentry.org/shell-genomics/06-organization/).  
 
 ~~~
 $ mv ~/.dc_sampledata_lite/untrimmed_fastq/ ~/dc_workshop/data/
@@ -271,6 +271,11 @@ Approx 50% complete for SRR097977.fastq
 
 In total, it should take about five minutes for FastQC to run on all
 six of our FASTQ files. When the analysis completes, your prompt
+will return. 
+
+While we wait, let's learn how to get files onto and off of our server a few different ways. [Click here to visit our Data Roundtripping instruction](https://rltillett.github.io/cloud-genomics/04-data-roundtripping/index.html) 
+
+When the analysis completes, your prompt
 will return. So your screen will look something like this:
 
 ~~~
