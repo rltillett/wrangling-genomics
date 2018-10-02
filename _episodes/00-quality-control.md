@@ -379,12 +379,12 @@ $ mkdir ~/Desktop/fastqc_html
 Now we can transfer our HTML files to our local computer using `scp`.
 
 ~~~
-$ scp dcuser@ec2-34-238-162-94.compute-1.amazonaws.com:~/dc_workshop/results/fastqc_untrimmed_reads/*.html ~/Desktop/fastqc_html
+$ scp dcuser@ec2-34-238-162-94.unr.edu:~/dc_workshop/results/fastqc_untrimmed_reads/*.html ~/Desktop/fastqc_html
 ~~~
 {: .bash}
 
 This looks really complicated, so let's break it down. The first part
-of the command `dcuser@ec2-34-238-162-94.compute-1.amazonaws.com` is
+of the command `dcuser@ec2-34-238-162-94.unr.edu` is
 the address for your remote computer. Make sure you replace everything
 after `dcuser@` with your instance number (the one you used to log in). 
 
