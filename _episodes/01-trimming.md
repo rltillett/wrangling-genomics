@@ -38,7 +38,7 @@ explain the syntax that is used to run Trimmomatic. The basic
 command to run Trimmomatic starts like this:
 
 ~~~
-$ java -jar trimmomatic-0.32.jar
+$ java -jar trimmomatic-0.36.jar
 ~~~
 {: .bash}
 
@@ -80,14 +80,14 @@ and options, see [the Trimmomatic manual](http://www.usadellab.org/cms/uploads/s
 We said above that a basic command for Trimmomatic looks like this:
 
 ~~~
-$ java -jar trimmomatic-0.32.jar SE
+$ java -jar trimmomatic-0.36.jar SE
 ~~~
 {: .bash}
 
 However, a complete command for Trimmomatic will look something like this:
 
 ~~~
-$ java -jar trimmomatic-0.32.jar SE -threads 4 -phred64 SRR_1056.fastq SRR_1056_trimmed.fastq ILLUMINACLIP:SRR_adapters.fa SLIDINGWINDOW:4:20
+$ java -jar trimmomatic-0.36.jar SE -threads 4 -phred64 SRR_1056.fastq SRR_1056_trimmed.fastq ILLUMINACLIP:SRR_adapters.fa SLIDINGWINDOW:4:20
 ~~~
 {: .bash}
 
@@ -119,7 +119,7 @@ discard any reads that do not have at least 20 bases remaining after
 this trimming step.
 
 ~~~
-$ java -jar ~/Trimmomatic-0.32/trimmomatic-0.32.jar SE SRR098283.fastq SRR098283.fastq_trim.fastq SLIDINGWINDOW:4:20 MINLEN:20
+$ java -jar ~/Trimmomatic-0.36/trimmomatic-0.36.jar SE SRR098283.fastq SRR098283.fastq_trim.fastq SLIDINGWINDOW:4:20 MINLEN:20
 ~~~
 {: .bash}
 
@@ -190,7 +190,7 @@ quickly!
 $ for infile in *.fastq
 > do
 > outfile="${infile}"_trim.fastq
-> java -jar ~/Trimmomatic-0.32/trimmomatic-0.32.jar SE "${infile}" "${outfile}" SLIDINGWINDOW:4:20 MINLEN:20
+> java -jar ~/Trimmomatic-0.36/trimmomatic-0.36.jar SE "${infile}" "${outfile}" SLIDINGWINDOW:4:20 MINLEN:20
 > done
 ~~~
 {: .bash}
@@ -327,7 +327,7 @@ SRR098027.fastq_trim.fastq  SRR098283.fastq_trim.fastq
 >
 >> ## Solution
 >>
->> In your AWS terminal window do:
+>> In your server-connected terminal window do:
 >>
 >> ~~~
 >> $ ~/FastQC/fastqc ~/dc_workshop/data/trimmed_fastq
@@ -344,7 +344,7 @@ SRR098027.fastq_trim.fastq  SRR098283.fastq_trim.fastq
 >> {: .bash}
 >>
 >> Remember to replace everything between the `@` and `:` in your scp
->> command with your AWS instance number.
+>> command with your netid and our server IP address.
 >>
 >> Before trimming, one of the sequences gave a warning and another
 >> failed the per base sequence quality test. After filtering, all
