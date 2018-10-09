@@ -36,7 +36,8 @@ Although copying our data would accomplish something similar, this way, the data
 
 ~~~
 $ cd ~/dc_workshop
-$ ln -s ~/.dc_sampledata_lite/ref_genome/ data/
+$ ls
+$ ln -s /home/public/dc_sample_data_lite/ref_genome/ref_genome/ data/
 ~~~
 {: .bash}
 
@@ -44,7 +45,7 @@ We will also link in a set of trimmed FASTQ files to work with. These are small 
 and will enable us to run our variant calling workflow quite quickly. 
 
 ~~~
-$ ln -s ~/.dc_sampledata_lite/trimmed_fastq_small/ data/
+$ ln -s /home/public/dc_sample_data_lite//trimmed_fastq_small/ data/
 ~~~
 {: .bash}
 
@@ -507,8 +508,8 @@ $ cd ~/Desktop/files_for_igv
 {: .bash}
 
 Now we will transfer our files to that new directory. Remember to replace the text between the `@` and the `:` 
-with your AWS instance number. The commands to `scp` always go in the terminal window that is connected to your
-local computer (not your AWS instance).
+with our server name/IP. The commands to `scp` always go in the terminal window that is connected to your
+local computer (not our server).
 
 ~~~
 $ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/results/bam/SRR097977.aligned.sorted.bam ~/Desktop/files_for_igv
@@ -518,7 +519,7 @@ $ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/results/vc
 ~~~
 {: .bash}
 
-You will need to type the password for your AWS instance each time you call `scp`. 
+You will need to type the password for your user each time you call `scp`. 
 
 Next we need to open the IGV software. If you haven't done so already, you can download IGV from the [Broad Institute's software page](https://www.broadinstitute.org/software/igv/download), double-click the `.zip` file
 to unzip it, and then drag the program into your Applications folder. 
