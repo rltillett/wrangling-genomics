@@ -33,7 +33,7 @@ sequences against a large reference genome. The alignment process consists of tw
 First we will copy the files for the reference genome data into our `data/` directory. 
 
 ~~~
-$ cd ~/dc_workshop
+$ cd ~/dc_workshop/data/
 $ ls
 $ mkdir ref_genome
 $ cp /home/public/dc_sample_data_lite/ref_genome/ref_genome/* ./ref_genome/
