@@ -302,7 +302,7 @@ $ bcftools view -bvcg results/bcf/SRR097977_raw.bcf > results/bcf/SRR097977_vari
 Filter the SNPs for the final output in VCF format, using `vcfutils.pl`:
 
 ~~~
-$ bcftools view results/bcf/SRR097977_variants.bcf \ | /usr/share/samtools/vcfutils.pl varFilter - > results/vcf/SRR097977_final_variants.vcf
+$ bcftools view results/bcf/SRR097977_variants.bcf \ | vcfutils.pl varFilter - > results/vcf/SRR097977_final_variants.vcf
 ~~~
 {: .bash}
 
