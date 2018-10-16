@@ -49,7 +49,8 @@ $ for filename in *.zip
 ~~~
 {: .bash}
 
-And here's the one you wrote for running Trimmomatic on all of our `.fastq` sample files.
+And here's one similar to what you wrote for running Trimmomatic on all of our `.fastq` sample files.
+Our scripts got more complicated when we began working with the compressed `.fastq.gz` files for performance and space reasons.
 
 ~~~
 $ for infile in *.fastq
@@ -322,8 +323,8 @@ for fq in ~/dc_workshop/data/trimmed_fastq_small/*.fastq
 > ## Indentation
 > 
 > All of the statements within your `for` loop (i.e. everything after the `for` line and including the `done` line) 
-> need to be indented. This indicates to the shell interpretor that these statements are all part of the `for` loop
-> and should be done once per input.
+> need to be indented. This indicates to the reader (and you the writer) that these statements are all part of the `for` loop
+> and should be done once per input. Some other scripting languages, namely Python, require indentation in loops, so this is a good habit to follow.
 > 
 {: .callout}
 
@@ -520,7 +521,7 @@ for fq in ~/dc_workshop/data/trimmed_fastq_small/*.fastq
 
 > ## Exercise
 > It's a good idea to add comments to your code so that you (or a collaborator) can make sense of what you did later. 
-> Look through your existing script. Discuss with a neighbor where you should add comments. Add comments (anything following
+> Look through your existing script. Discuss with a neighbor (between now and the due date) where you should add comments. Add comments (anything following
 > a `#` character will be interpreted as a comment, bash will not try to run these comments as code). 
 {: .challenge}
 
