@@ -301,8 +301,13 @@ $ bcftools view -bvcg results/bcf/SRR097977_raw.bcf > results/bcf/SRR097977_vari
 
 Filter the SNPs for the final output in VCF format, using `vcfutils.pl`:
 
+`vcfutils.pl` lives in a sub-folder `misc` of our bcftools installation, and as such, our OS doesn't know where this program is unless we either
+
+a) add this `misc` folder to our path as well or
+b) just specify the full path to the program when we wish to invoke it. That full path should be `~/src/bcftools/misc/vcfutils.pl`
+
 ~~~
-$ bcftools view results/bcf/SRR097977_variants.bcf \ | vcfutils.pl varFilter - > results/vcf/SRR097977_final_variants.vcf
+$ bcftools view results/bcf/SRR097977_variants.bcf \ | ~/src/bcftools/misc/vcfutils.pl varFilter - > results/vcf/SRR097977_final_variants.vcf
 ~~~
 {: .bash}
 
